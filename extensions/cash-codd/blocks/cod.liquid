@@ -1,0 +1,29 @@
+<style>
+  .cd_btn {
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    padding: 1rem;
+    font-weight: bold;
+  }
+</style>
+
+<div>
+  <button class="cd_btn" id="abtn">Cash On Delivery</button>
+</div>
+<div id="container"></div>
+<script>
+  // Event listener for the button click
+  document.getElementById('abtn').addEventListener('click', async () => {
+    await fetch('/admin/apps/cash-cod/usman');
+  });
+</script>
+
+{% schema %}
+{
+  "name": "CashBtn",
+  "target": "section",
+  "javascript": "OrderModel.jsx",
+  "settings": []
+}
+{% endschema %}

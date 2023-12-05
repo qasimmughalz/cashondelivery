@@ -1,0 +1,28 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "cash-cod"
+client_id = "8da0de38372cccdd708c50a8c1a7f43b"
+application_url = "https://printer-islamic-photo-professional.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://printer-islamic-photo-professional.trycloudflare.com/auth/callback",
+  "https://printer-islamic-photo-professional.trycloudflare.com/auth/shopify/callback",
+  "https://printer-islamic-photo-professional.trycloudflare.com/api/auth/callback",
+  "https://printer-islamic-photo-professional.trycloudflare.com/.shopify/graphiql/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "usman112233.myshopify.com"
